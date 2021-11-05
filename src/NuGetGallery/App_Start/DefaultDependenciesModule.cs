@@ -954,10 +954,10 @@ namespace NuGetGallery
         {
             if (connectionFactory.TryCreate(out var connection))
             {
-                telemetryClient.TrackAggregatedMetric("CreateDbConnection", 1, "Mode", "Sync");
+                telemetryClient.TrackMetric("CreateDbConnection", 1, new Dictionary<string, string> { { "Mode", "Sync" } });
                 return connection;
             }
-            telemetryClient.TrackAggregatedMetric("CreateDbConnection", 1, "Mode", "Async");
+            telemetryClient.TrackMetric("CreateDbConnection", 1, new Dictionary<string, string> { { "Mode", "Async" } });
             return Task.Run(() => connectionFactory.CreateAsync()).Result;
         }
 
