@@ -22,4 +22,4 @@ steps:
       forceUpdate=true
       resolveAllDependencies=true
       updateInventory=true
-    scanReportTimeout: '0.1'
+    scanReportTimeout: '6'
