@@ -19,4 +19,4 @@ steps:
     projectName: 'C8226105_1'
     configuration: |
       resolveAllDependencies=true
-    scanReportTimeout: '0.5'
+    scanReportTimeout: '0.01'
