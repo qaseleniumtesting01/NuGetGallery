@@ -16,10 +16,7 @@ steps:
 - task: WhiteSource@21
   inputs:
     cwd: '$(System.DefaultWorkingDirectory)'
-    projectName: 'NuGetGallery'
+    projectName: 'C8226105_1'
     configuration: |
-      checkPolicies=true
-      forceUpdate=true
       resolveAllDependencies=true
-      updateInventory=true
-    scanReportTimeout: '0.1'
+    scanReportTimeout: '0.5'
