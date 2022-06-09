@@ -16,7 +16,5 @@ steps:
 - task: WhiteSource@21
   inputs:
     cwd: '$(System.DefaultWorkingDirectory)'
-    projectName: 'C8226105_1'
-    configuration: |
-      resolveAllDependencies=true
-    scanReportTimeout: '0.01'
+    projectName: 'C8226105'
+    configuration: 'resolveAllDependencies=true'
